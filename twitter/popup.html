@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Twitter Cleaner</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 16px;
+      background: #f9f9f9;
+      width: 300px;
+    }
+
+    h1 {
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+
+    button {
+      background-color: #1da1f2;
+      border: none;
+      color: white;
+      padding: 10px 16px;
+      font-size: 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      width: 100%;
+      margin-bottom: 16px;
+    }
+
+    .progress {
+      margin-top: 10px;
+      font-size: 13px;
+      color: #333;
+      background: #fff;
+      padding: 10px;
+      border-radius: 6px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .done {
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <h1>Twitter Cleaner</h1>
+  <button id="startClean">Clean My Tweets</button>
+  <div class="progress" id="progressBox">
+    1) Likes Removed: <span id="likeCount">0</span><br>
+    2) Posts Deleted: <span id="postCount">0</span><br>
+    3) Replies Deleted: <span id="replyCount">0</span><br>
+    4) Highlights Removed: <span id="highlightCount">0</span><br>
+    5) Articles Removed: <span id="articleCount">0</span><br>
+    6) Media Removed: <span id="mediaCount">0</span>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
+
